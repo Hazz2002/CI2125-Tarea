@@ -1,0 +1,2 @@
+Empecé la experiencia subiendo los archivos con Git y posteriormente las fotos del proceso.
+Tengo que decir que al principio me costó un poco agarrarle la onda al Git bash, pero apenas aprendí quedé maravillado por como se conecta con GitHub. Hice varios cambios con Copilot y pude subir las versiones sin ningún problema, también me apoyé con ChatGPT para entender un poco Git. En resumen, esta experiencia fue muy enriquecedora y me permitió aprender cosas vitales.
