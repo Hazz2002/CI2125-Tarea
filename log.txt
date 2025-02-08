@@ -1,0 +1,2 @@
+220be55 Simplificado el código para sumar tres números
+a524391 Añadir programa de suma de 3 numeros en C++
