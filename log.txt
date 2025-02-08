@@ -1,2 +1,5 @@
+6c3ae97 Descripción de la experiencia del proceso de carga de archivos con Git
+7c9b71f Fotos del proceso de creación del programa
+9305d3c Añadir log del proceso
 220be55 Simplificado el código para sumar tres números
 a524391 Añadir programa de suma de 3 numeros en C++
