@@ -1,2 +1,5 @@
-PgÑ÷   
-CI2125   Computaci¢n 1
+EC1251   Redes 1
+EC2272   Redes 2
+EC2422   Comunicaciones 1
+EC3423   Comunicaciones 2
+EC2322   Teoria de Ondas

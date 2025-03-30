@@ -1,7 +1,6 @@
 #include <iostream>
-#include <fstream>
-#include <string>
-#include <limits>
+#include <cstdio>
+#include <cstring>
 
 using namespace std;
 
@@ -14,24 +13,24 @@ void solicitarCodigo(char codigo[]) {
 // Función para solicitar el nombre de la asignatura
 void solicitarNombre(char nombre[]) {
     cout << "Ingrese el nombre de la asignatura (20 caracteres): ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Limpiar el buffer
+    cin.ignore(); // Limpiar el buffer
     cin.getline(nombre, 21);
 }
 
 // Función para escribir los datos en el archivo
-void escribirEnArchivo(const string& filename, const char codigo[], const char nombre[]) {
-    ofstream file(filename, ios::app);
-    if (!file) {
+void escribirEnArchivo(const char* filename, const char codigo[], const char nombre[]) {
+    FILE* file = fopen(filename, "a"); // Abrir en modo de adición
+    if (file == nullptr) {
         cerr << "Error al abrir el archivo " << filename << endl;
         return;
     }
-    file << codigo << "   " << nombre << endl;
-    file.close();
+    fprintf(file, "%-7s   %-20s\n", codigo, nombre); // Escribir en el archivo
+    fclose(file); // Cerrar el archivo
 }
 
 // Función principal
 int main() {
-    const string filename = "asignaturas.txt";
+    const char* filename = "asignaturas.txt";
     char codigo[8]; // 7 caracteres + 1 para el terminador nulo
     char nombre[21]; // 20 caracteres + 1 para el terminador nulo
     char continuar;
